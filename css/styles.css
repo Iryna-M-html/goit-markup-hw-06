@@ -312,3 +312,105 @@ butoon{
 .button-style:focus {
     background: #404bbf;
 }
+
+/*section-two*/
+.section-two{
+    padding: 96px 0;
+}
+
+.icon-border{
+    display: none;
+}
+.advantages-positions-tru {
+    display: flex;
+    display: inline;
+    }
+.advantages-positions{
+    margin-bottom: 72px;
+}
+
+.advantages-positions-names {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.advantages-positions-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+@media screen and (min-width: 768px) {
+    .section-two {
+            padding: 96px 0;
+        }
+  .advantages-positions-tru {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 24px;                   
+        }
+            
+        .advantages-positions {
+           
+            flex-basis: calc((100% - 24px) / 2);
+            }
+
+    
+        
+    }
+@media screen and (min-width: 1158px){
+    .section-two {
+            padding: 120px 0;
+        }
+    
+        .icon-border {
+            border: 1px solid #8e8f99;
+            border-radius: 4px;
+            width: 264px;
+            height: 112px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4fd;
+        }
+    
+        .icon-section-two {}
+    
+    
+    
+        .advantages-positions-tru {
+            display: flex;
+            gap: 24px;
+        }
+    
+        .advantages-positions {
+            background: #fff;
+            flex: calc((100% - 72px)/4);
+    
+        }
+        .advantages-positions-names {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+            color: #2e2f42;
+            margin-bottom: 8px;
+        }
+    
+        .advantages-positions-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: #434455;
+        }
+}
+        
