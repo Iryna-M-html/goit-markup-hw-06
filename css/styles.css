@@ -532,3 +532,97 @@ butoon{
             
         }
 }
+/*portfolio-groupe*/
+.portfolio-groupe {
+    background: #fff;
+    padding: 96px 0 96px 0;
+}
+.portfolio-groupe-name {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 72px;
+
+}
+
+.portfolio-poziom {
+    
+}
+
+.border-foto {
+    margin-bottom: 48px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.border-foto:hover .portfolio-text-image {
+    transform: translateY(0);
+}
+
+.border-foto-picture-wrap {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-text-image {
+    position: absolute;
+    top: 0;
+    background: #4d5ae5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding: 40px 32px;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-poziom-one {
+    border: 1px solid #e7e9fc;
+    background-color: #ffffff;
+    padding: 32px 16px;
+    border-top: none;
+}
+.portfolio-servises-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+
+}
+.portfolio-servises-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+@media screen and (min-width: 768px){
+    .portfolio-poziom {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        row-gap: 48px;
+
+    }
+        .border-foto {
+            flex: calc((100% - 24px)/2);
+           
+        }
+
+}
+@media screen and (min-width: 1158px){
+    .border-foto {
+            flex: calc((100% - 48px)/3);
+            
+        }
+}
