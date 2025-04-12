@@ -776,54 +776,76 @@ butoon{
 
 @media screen and (min-width: 768px)
 {
+    .down{
+        padding-top: 96px;
+        padding-left: 108px;
+        padding-bottom: 96px;
+    }
 
     .footer-container{
         display: block;
-        padding-left: 92px;
-        padding-right: 148px;
+        
     }
     .footer-top{
         padding: 0;
         display: flex;
         align-items: first baseline;
-        justify-content: space-between;
         margin-bottom:  72px;
 
         
 
     }
     .footer{
+        width: 264px;
     margin-right: 24px;
     text-align: left;
     
     }
 
-    .footer-form {
-        position: relative;
-        max-width: 264px;
-    }
+        .footer-form-all {
+            display: block;
+            flex-wrap: wrap;
+            width: 453px;
+            height: 80px;
+            text-align: left;
+            
+        }
+    
+        .footer-form {
+            display: flex;
+            gap: 24px;
+            justify-content: flex-end;
+            vertical-align: top;
+        }
+
+        .footer-text-form {
+            
+        }
 
     .footer-label {
         display: block;
-        width:100%;
+        width: 264px;;
         text-align: left;
+       
+        
         
         
     }
     .footer-input {
-
+        width: 264px;
     }
         
         
-
-
     .footer-form-btn{
-        position: absolute;
-            top: 0;
-            right: 0;
-            left: 304px;
+        align-items: last baseline;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
             
-            
+    }
+    .logo-text{
+        width: 264px;
     }
 
     .logo-all-two{
@@ -837,39 +859,30 @@ butoon{
         text-align: left;
         
     }
-    .social-list-footer{
-    }  
-
-    .footer-form-all{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 0 auto;
-    }
+    .irow{
+       
+    
 }
 
 
 
 
 @media screen and (min-width: 1158px) {
-.down {
-        padding: 100px 0;
         
-
-    }
+    .down {
+        padding: 100px 0;
+            }
 
     .footer-container {
         display: flex;
-        align-items: baseline;
-        justify-content: space-between;
         flex-direction: row;
-    }
-    .footer-top{
-        
+        align-items: first baseline;
+             
+        justify-content: space-between;
     }
 
     .footer {
-        margin: start;
+        
         margin-right: 120px;
     }
 
@@ -1004,7 +1017,12 @@ butoon{
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    
+    .footer-form-btn:hover {
+        background: #404bbf;
 
+    }
 
+    .footer-form-btn:focus {
+        background: #404bbf;
+    }
 }
