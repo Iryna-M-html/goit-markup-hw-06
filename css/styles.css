@@ -234,6 +234,13 @@ butoon{
     }
 }
 
+/*mobile-menu*/
+.mobile-menu{
+    
+}
+
+
+
 .section-one {
     background: #2e2f42;
     height: 432px;
@@ -439,6 +446,7 @@ butoon{
 
 .team-poziom {
        justify-content: center;
+       margin-bottom: 0;
 
 }
 
@@ -450,6 +458,8 @@ butoon{
     margin-bottom: 72px;
     max-width: 264px;
 }
+
+
 .team-foto {
     margin: auto;
     background: #fff;
@@ -518,6 +528,7 @@ butoon{
             height: 428px;
         }
 
+
 }
 @media screen and (min-width: 1158px){
     .team {
@@ -536,6 +547,7 @@ butoon{
             flex: calc((100% - 72px)/4);
             
         }
+
 }
 /*portfolio-groupe*/
 .portfolio-groupe {
@@ -551,11 +563,13 @@ butoon{
     text-align: center;
     color: #2e2f42;
     margin-bottom: 72px;
+    
 
 }
 
+
 .portfolio-poziom {
-    
+    margin-bottom: 0;
 }
 
 .border-foto {
@@ -791,6 +805,7 @@ butoon{
         display: flex;
         align-items: first baseline;
         margin-bottom:  72px;
+        margin-top: 0;
 
         
 
@@ -857,6 +872,7 @@ butoon{
 
     .social-media-text{
         text-align: left;
+        margin-top: 0;
         
     }
     .irow{
@@ -879,6 +895,10 @@ butoon{
         align-items: first baseline;
              
         justify-content: space-between;
+    }
+
+    .footer-top{
+        margin-bottom: 0;
     }
 
     .footer {
@@ -1026,3 +1046,5 @@ butoon{
         background: #404bbf;
     }
 }
+
+
