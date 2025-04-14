@@ -247,15 +247,16 @@ butoon{
     visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    }
-    
+}
 
 .mobile-menu.is-open{
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    
 }
+ 
+
 
 .mobile-menu-container{
     position: relative;
@@ -264,30 +265,27 @@ butoon{
     display: flex;
     flex-direction: column;
     height: 100%;
-
 }
+
 .mobile-menu-close{
     position: absolute;
     top: 24px;
-    right: 24px;
-
-
-    
-        border-radius: 4px;
-        width: 24px;
-        height: 24px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        border-radius: 50%;
-        justify-content: center;
-        background-color: #e7e9fc;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        padding: 0;
-        cursor: pointer;
-        transition-property: border, background-color, fill;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    right: 24px;  
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    justify-content: center;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition-property: border, background-color, fill;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .mobile-menu-close:hover {
     background-color: #404bbf;
@@ -304,6 +302,7 @@ butoon{
 .mobile-menu-close:focus .closes {
     fill: #fff;
 }
+
 
 .mobile-menu-nav{
     margin-bottom: auto;
@@ -359,6 +358,8 @@ color: #404bbf;
     justify-content: space-between;
     margin-top: 48px;
 }
+
+
 
 @media screen and (min-width: 768px){
     .mobile-menu{
@@ -714,7 +715,7 @@ color: #404bbf;
 
 .border-foto-picture-wrap {
     position: relative;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .portfolio-text-image {
@@ -1188,9 +1189,18 @@ color: #404bbf;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 24px 16px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px){
+.modal{
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+}
+}
+    
+
 
 .modal-close-btn {
     position: absolute;
@@ -1248,6 +1258,11 @@ color: #404bbf;
     margin-bottom: 16px;
     max-width: 256px;
 }
+@media screen and (min-width: 768px){
+    .modal-text {
+        max-width: 360px;
+}
+}
 
 .modal-field {
     margin-bottom: 8px;
@@ -1295,6 +1310,11 @@ color: #404bbf;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px){
+    .modal-input{
+        width: 360px;
+    }
+}
 
 .modal-input:focus {
     border-color: #4d5ae5;
@@ -1321,6 +1341,12 @@ color: #404bbf;
     color: rgba(46, 47, 66, 0.4);
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px){
+    .modal-textarea{
+        width: 360px;
+    }
 }
 
 .modal-textarea:focus {
@@ -1358,6 +1384,8 @@ color: #404bbf;
 }
 
 .modal-chek-text {
+    display: flex;
+    align-items: center;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 12px;
@@ -1365,6 +1393,7 @@ color: #404bbf;
     letter-spacing: 0.04em;
     color: #8e8f99;
     align-items: center;
+    
 }
 
 .policy-link {
@@ -1372,6 +1401,13 @@ color: #404bbf;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4d5ae5;
+}
+.policy-column{
+
+}
+.modal-chek{
+    display: flex;
+   
 }
 
 .input-illusion {
@@ -1381,7 +1417,7 @@ color: #404bbf;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 8px;
-
+    flex-shrink: 0;
     align-items: center;
     justify-content: center;
     fill: transparent;
