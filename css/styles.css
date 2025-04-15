@@ -714,6 +714,9 @@ color: #404bbf;
 .border-foto:hover .portfolio-text-image {
     transform: translateY(0);
 }
+.image-planshet{
+    display: none;
+}
 
 .border-foto-picture-wrap {
     position: relative;
@@ -772,6 +775,12 @@ color: #404bbf;
     .border-foto {
         flex: calc((100% - 24px)/2);
     }
+        .image-planshet {
+            display: flex;
+        }
+        .image-mobile{
+            display: none;
+        }
 }
 
 @media screen and (min-width: 1158px){
