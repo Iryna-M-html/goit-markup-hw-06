@@ -56,6 +56,7 @@ butoon{
     max-width: 320px;
     padding: 0 16px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -95,7 +96,8 @@ butoon{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 76px;
+    width: 115px;
+    
     position: relative;
 }
 
@@ -464,10 +466,14 @@ color: #404bbf;
 .advantages-positions-tru {
     display: flex;
     display: inline;
+    padding-inline-start: 0;
     }
 
 .advantages-positions{
     margin-bottom: 72px;
+}
+.advantages-positions:last-child{
+    margin-bottom: 0px;
 }
 
 .advantages-positions-names {
@@ -563,10 +569,13 @@ color: #404bbf;
 /*sectiom-team*/
 .team {
     background-color: #F4F4FD;
-    padding: 96px 0px;
+    padding: 96px 0px 96px 0px;
+    display: block;
+    
 }
 
 .team-groupe {
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -577,11 +586,14 @@ color: #404bbf;
     margin: auto;
     margin-bottom: 72px;
     
+    
 }
 
 .team-poziom {
        justify-content: center;
        margin-bottom: 0;
+       width: 264px;
+       margin: 0 auto;
 }
 
 .team-list {
@@ -590,7 +602,10 @@ color: #404bbf;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
     margin-bottom: 72px;
-    max-width: 264px;
+    width: 100%;
+}
+.team-list:last-child{
+    margin-bottom: 0;
 }
 
 .team-foto {
@@ -709,6 +724,9 @@ color: #404bbf;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.border-foto:last-child{
+    margin-bottom: 0;
 }
 
 .border-foto:hover .portfolio-text-image {
