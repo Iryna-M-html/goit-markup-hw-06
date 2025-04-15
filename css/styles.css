@@ -497,11 +497,13 @@ color: #404bbf;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        gap: 24px;                   
+        gap: 24px;
+        row-gap: 72px;                   
     }
             
     .advantages-positions { 
         flex-basis: calc((100% - 24px) / 2);
+        margin-bottom: 0;
     }
 
     .advantages-positions-names{
@@ -1345,7 +1347,7 @@ color: #404bbf;
 
 @media screen and (min-width: 768px){
     .modal-textarea{
-        width: 360px;
+        width:360px;
     }
 }
 
