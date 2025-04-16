@@ -329,12 +329,14 @@ butoon{
 color: #404bbf;
 }
 .mobile-address{
- display: flex;
- gap: 24px;
+ 
 
 }
 .mobile-list{
-   
+   font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 
 }
 
@@ -344,21 +346,24 @@ color: #404bbf;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        color: #434455;}
+        color: #434455;
+    font-style: normal;
+    margin-bottom: 48px;
+}
 
 
 .mobile-address-one{
- margin-bottom: 24px;
+ margin-bottom: 0;
  color: #4d5ae5;
 }
 
 
 .social-mobile-list{
     display: flex;
-    gap: 16px;
-    margin-bottom: 32px;
+    gap: 40px;
+    margin-bottom: 0px;
     justify-content: space-between;
-    margin-top: 48px;
+    
 }
 
 
@@ -669,18 +674,30 @@ color: #404bbf;
 }
 
 @media screen and (min-width: 768px){
-    .team-poziom {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 24px;
+    .team{
+       
     }
+
+    .team-poziom {
+        
+                display: flex;
+                flex-wrap: wrap;
+                gap: 24px;
+                padding-inline-start: 0;
+                list-style: none;
+                margin: 0 auto;
+                width: 100%;
+                row-gap: 64px;
+                
+    }
+
+    
 
     .team-list {
         flex-basis: calc((100% - 24px) / 2);
         max-width: 264px;
-        height: 428px;
+        height: 100%;
+        margin-bottom: 0;
     }
 }
 
@@ -794,6 +811,7 @@ color: #404bbf;
     }
 
     .border-foto {
+        margin-bottom: 0;
         flex: calc((100% - 24px)/2);
     }
         .image-planshet {
@@ -972,23 +990,27 @@ color: #404bbf;
         padding-top: 96px;
         padding-left: 108px;
         padding-bottom: 96px;
+        padding-right: 164px;
     }
 
     .footer-container{
-        display: block; 
+        display: flex; 
+        align-items: start;
+        justify-content: left;
+        flex-direction: column;
+        row-gap: 72px;
     }
    
     .footer-top{
-        padding: 0;
         display: flex;
         align-items: first baseline;
-        margin-bottom:  72px;
+        gap:24px;
         margin-top: 0;
+        
    }
 
     .footer{
         width: 264px;
-        margin-right: 24px;
         text-align: left;
     }
 
@@ -1008,7 +1030,8 @@ color: #404bbf;
     }
 
     .footer-text-form {
-        
+        display: block;
+        text-align: left;
     }
 
     .footer-label {
@@ -1058,16 +1081,16 @@ color: #404bbf;
         display: flex;
         flex-direction: row;
         align-items: first baseline;
-             
-        justify-content: space-between;
+         justify-content: space-between;
     }
 
     .footer-top{
+        gap: 120px;
         margin-bottom: 0;
     }
 
     .footer {
-        margin-right: 120px;
+       
     }
 
     .logo-text {
@@ -1091,7 +1114,7 @@ color: #404bbf;
     .social-footer {
         width: 208px;
         height: 80px;
-        margin-right: 80px;
+        margin-right: 0px;
     }
 
     .social-list-footer {
