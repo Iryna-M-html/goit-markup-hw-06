@@ -1031,7 +1031,7 @@ color: #404bbf;
         padding-top: 96px;
         padding-left: 108px;
         padding-bottom: 96px;
-        padding-right: 164px;
+        
     }
 
     .footer-container{
@@ -1039,8 +1039,7 @@ color: #404bbf;
         align-items: start;
         justify-content: left;
         flex-direction: column;
-        row-gap: 72px;
-    }
+            }
    
     .footer-top{
         display: flex;
@@ -1048,6 +1047,9 @@ color: #404bbf;
         gap:24px;
         margin-top: 0;
         
+   }
+   .social-footer{
+    margin-top: 0;
    }
 
     .footer{
