@@ -384,18 +384,41 @@ color: #404bbf;
     background: #2e2f42;
     height: 432px;
     padding: 72px 0;
-    max-width: 1440px;
+    max-width: 320px;
     margin: auto;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/planshet/imagecompressor/people1-min.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mobile/imagecompressor/Dark-bg-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+@media screen and (min-resolution: 2x)  {
+    .section-one{
+        background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+             rgba(46, 47, 66, 0.7)),
+              url(../images/mobile/imagecompressor/Dark-bg@2x-min.jpg);
+
+    }
+}
+
 @media screen and (min-width: 768px){
     .section-one {
         height: 436px;
         padding: 112px 0;
+        max-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/planshet/imagecompressor/Dark-bg-min.jpg);
     }
+@media screen and (min-resolution: 2x) {
+    .section-one {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/planshet/imagecompressor/Dark-bg@2x-min.jpg);
+
+    }
+}
+
+
 }
 
 @media screen and (min-width: 1158px){
@@ -404,7 +427,18 @@ color: #404bbf;
         padding: 188px 0;
         margin-block-start: 0;
          margin-block-end: 0;
+         max-width: 1440px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/pk/people1-min.jpg);
 }
+        @media screen and (min-resolution: 2x) {
+            .section-one {
+                background-image: linear-gradient(to bottom,
+                        rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url(../images/pk/people@2x-min.jpg);
+    
+            }
+        }
     }
  
 .section-name {
